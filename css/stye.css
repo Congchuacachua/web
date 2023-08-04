@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body{
+	font-family: 'Questrial', sans-serif; font-size:16px;color: #666666; margin: 0}
+header{
+	width: 100%; height: 90px; background-color: rgba(255,255,255,0.80); box-shadow: 5px 5px 5px #B23A48; position: fixed; left: 0; top: 0; z-index: 50;
+}
+.logo{
+	padding-top: 0px;
+}
+.menu ul{
+	margin: 0;padding: 0; list-style: none; display: flex
+}
+.menu{
+	padding-top: 30px;
+}
+.menu ul li a{
+	padding: 8px 20px; border-radius: 20px;
+}
+.menu ul li a:hover{
+	background-color: rgba(245,165,167,1.00); color: white
+}
+#home{
+	width: 100%;min-height: 1100px;padding-top: 200px; background: url("../img/ngọt.png");background-repeat: no-repeat;background-position: left 0 top 0, right 0 bottom 0; background-color: #F9CAC3; background-size: cover
+}
+
+#home img{
+	width: 20%; height: 20px
+}
+#home h1 {
+	color: black; font-size: 40px;
+}
+#about{
+	width: 100%;min-height: 1000px;padding-top: 180px; background-color: #F9CAC3 
+/*	background-color: deeppink;*/
+}
+#about .so{
+	font-size: 120px;font-weight: bold;color: black;padding: 0 5px
+}
+#about .years{
+	letter-spacing: 30px;
+}
+#skill{
+	width: 100%;min-height: 1100px;padding-top: 80px; background-color: #F9CAC3;
+}
+.text-big{font-size: 35px}
+.progress{
+	height: 5px; width: 100%; background-color: #B23A48; boder-radius: 15px; overflow: hidden;
+}
+.bar{ height: 5px; border-radius: 15px; color: white; text-align: center}
+/* Style the tab */
+#skill .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#skill .tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+#skill .tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+#skill .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#service{
+	width: 100%;min-height: 1000px;padding-top: 80px; background-color: #F9CAC3; color: #AD5858
+}
+#service .service{
+	width: 100%;height: 150px; display: flex
+}
+#service .icon{
+	width: 180px; height: 150px; border: 1px solid #881E36; display: flex; justify-content: center; align-items: center
+}
+#service .icon i{
+	font-size: 40px; color: #881E36;
+}
+#service .icon img{
+	width: 150px; color: green; transition: all 0.7s; height: auto
+}
+#service .service-text{
+	width: 100%; padding: 10px; height: 150px; color:#881E36
+}
+#service .service:hover .icon i{
+	font-sixe: 60px
+}
+#service .service:hover .service-text{
+	background-color: #E2DCCE; color: #1C5C34
+}
+#service .service:hover .service-text h4{
+  color:  #1C5C34
+}
+#projects{
+	width: 100%;min-height: 1000px;padding-top: 80px; background-color: #F9CAC3
+}
+/* Style the tab */
+#projects .tab {
+ 
+}
+#projects h1{
+	color: #AD5858
+}
+/* Style the buttons inside the tab */
+#projects .tab button {
+background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 18px; margin-left: 15px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+  border-bottom: 2px solid #AD5858; color: #AD5858
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+  border-bottom: 2px solid #AD5858; color: #AD5858
+}
+
+/* Style the tab content */
+#projects .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+#projects .box{
+	display: flex; justify-content: space-between; align-items: center
+}
+#testimonial{
+	width: 100%;min-height: 1000px;padding-top: 80px; background-color: #F9CAC3;
+}
+#slider .owl-nav { position:absolute; left:0px; top:70%; width:100%; }
+#slider .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #881E36
+}
+
+#slider .owl-nav .owl-next{ position:absolute; right:5%;}
+#slider .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slider .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color: #E79796;
+      text-decoration: none; }
+#testimonial .client img{
+	width: 250px; height: 250px ;border-radius: 50%;
+}
+#testimonial .vien{
+	width: 100px; height: 100px; border-radius: 50%; padding: 7px; border: 2px solid #881E36
+}
+#testimonial .client{
+	text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px 50px
+}
+#contact{
+	width: 100%;min-height: 1000px;padding-top: 80px; background-color: #F9CAC3;
+}
+.text-do{
+	color: #8E2020;
+}
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+}
+
+.text-den{
+	color: #8E2020;
+}
+.bo-goc{
+	border-radius: 10px;
+}
+.vien-chan{
+	padding-bottom: 20px ; border-bottom: 1px solid #A3334F
+}
+/*kjahwfiwhefoqeug*/
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-2 15:37:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+p{
+	color: #DB1049;  line-height: 30px;
+}
+/*djbhvsjahbv*/
+.wobble-hor-top {
+	-webkit-animation: wobble-hor-top 0.8s both;
+	        animation: wobble-hor-top 0.8s both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-2 16:13:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+		
